@@ -143,6 +143,44 @@ main>section {
     font-weight: 500;
 }
 
+/*  feature you will you  will enjoy */
+.border-left {
+    border-left: 4px solid #FF900E;
+    padding-left: 10px;
+}
+
+.feature-cards {
+
+    padding: 30px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+}
+
+.feature-card-title {
+    font-size: 1.35rem;
+    font-weight: 600;
+
+}
+
+.feature-container {
+    gap: 100px;
+}
+
+.feature-img {
+    max-height: 982px;
+}
+
+.btn-feature {
+    min-width: 258px;
+    min-height: 109px;
+    margin-top: -50px;
+    margin-left: -50px;
+
+}
+
+.btn-feature>span {
+    font-size: 1.1rem;
+}
 
 /* Some Facts section start here */
 .card-section {
@@ -179,36 +217,92 @@ main>section {
     margin-top: -45px;
 }
 
+/* our-sponsor section start here */
+.sponsor-info {
+    max-width: 560px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sponsor-company {
+    margin: 0 auto;
+    justify-content: space-between;
+    filter: grayscale(100%)
+}
+
+.sponsor-img {
+
+    /* margin-right: 100px; */
+}
+
+/* footer */
+.footer-p {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+    background: rgba(255, 244, 231, 1);
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
 /* responsive media */
 @media screen and (max-width:576px) {
 
     .navbar,
     .nav-links,
-    .teams {
+    .teams,
+    .feature-container {
         flex-direction: column;
     }
 
-    .team-img-container {
+    .team-img-container,
+    .sponsor-company {
         grid-template-columns: repeat(1, 1fr);
     }
 
     .our-feature {
-        padding-left: 20px;
-    }
 
-    .our-feature {
-        margin-left: 10px;
+        flex-direction: column;
+        align-items: center;
 
     }
+
+
 
     .card-section {
         margin-top: 100px;
         flex-direction: column;
         padding: 10px;
+        align-items: center;
     }
 
     .section-card {
         margin-bottom: 30px;
+    }
+
+    .sponsor-company {
+        flex-direction: column;
+        align-items: center;
+
+
+
+    }
+
+    .sponsor-img {
+        margin-bottom: 50px;
+    }
+
+    .feature-img {
+        max-width: 100%;
+    }
+
+    .btn-feature {
+        margin: 0 auto;
+        margin-top: 50px;
+
+
+
     }
 }
 
@@ -223,6 +317,7 @@ main>section {
     }
 
     .our-feature {
+        flex-direction: column;
         margin: 50px auto;
         padding: 40px;
     }
@@ -230,5 +325,10 @@ main>section {
     .section-card {
         height: 141px;
         width: 141px;
+    }
+
+    .sponsor-company {
+        justify-content: center;
+        gap: 50px;
     }
 }
